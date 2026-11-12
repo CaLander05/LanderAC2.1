@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo de productos - ArteLocal</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>ArteLocal</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+        <li><a href="formulario.html">Formulario</a></li>
+        <li><a href="carrito.html">Carrito</a></li>
+        <li><a href="detalle.html">Detalle</a></li>
+        <li><a href="login.html">Acceso</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Catálogo de productos</h2>
+
+    <div class="aviso">
+      Prototipo: la búsqueda, los filtros y la paginación todavía no modifican los resultados.
+    </div>
+
+    <div class="herramientas">
+      <div class="buscador">
+        <label for="buscar">Buscar producto:</label>
+        <input type="text" id="buscar" name="buscar">
+        <button type="button">Buscar</button>
+      </div>
+
+      <fieldset>
+        <legend>Categoría</legend>
+        <label for="categoria">Elige una categoría:</label>
+        <select id="categoria" name="categoria">
+          <option value="todas">Todas</option>
+          <option value="ceramica">Cerámica</option>
+          <option value="decoracion">Decoración</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Precio</legend>
+        <div class="opcion">
+          <input type="radio" id="precio-todos" name="precio" value="todos" checked>
+          <label for="precio-todos">Cualquier precio</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="precio-bajo" name="precio" value="bajo">
+          <label for="precio-bajo">Hasta 25 €</label>
+        </div>
+        <div class="opcion">
+          <input type="radio" id="precio-alto" name="precio" value="alto">
+          <label for="precio-alto">Más de 25 €</label>
+        </div>
+      </fieldset>
+
+      <button type="button">Aplicar filtros</button>
+    </div>
+
+    <p>Mostrando 1–6 de 18 resultados</p>
+
+    <div class="catalogo">
+      <article class="tarjeta">
+        <h3>Jarrón de cerámica</h3>
+        <img src="img/jarron.svg" alt="Jarrón de cerámica de color terracota">
+        <p>Jarrón hecho a mano con acabado mate.</p>
+        <p class="precio">45,00 € · Cerámica</p>
+        <a href="detalle.html">Ver detalle del jarrón de cerámica</a>
+      </article>
+
+      <article class="tarjeta">
+        <h3>Plato decorativo</h3>
+        <img src="img/plato.svg" alt="Plato decorativo azul con el centro claro">
+        <p>Plato para colgar o apoyar en una estantería.</p>
+        <p class="precio">30,00 € · Decoración</p>
+        <p class="nota">Detalle no disponible en el prototipo</p>
+      </article>
+
+      <article class="tarjeta">
+        <h3>Cuenco de barro</h3>
+        <img src="img/cuenco.svg" alt="Cuenco de barro marrón">
+        <p>Cuenco de barro cocido para servir o decorar.</p>
+        <p class="precio">20,00 € · Cerámica</p>
+        <p class="nota">Detalle no disponible en el prototipo</p>
+      </article>
+
+      <article class="tarjeta">
+        <h3>Taza artesanal</h3>
+        <img src="img/taza.svg" alt="Taza artesanal de color rojo con asa">
+        <p>Taza esmaltada, cada una es ligeramente distinta.</p>
+        <p class="precio">15,00 € · Cerámica</p>
+        <p class="nota">Detalle no disponible en el prototipo</p>
+      </article>
+
+      <article class="tarjeta">
+        <h3>Maceta pintada</h3>
+        <img src="img/maceta.svg" alt="Maceta naranja con una planta verde">
+        <p>Maceta pintada a mano para plantas pequeñas.</p>
+        <p class="precio">25,00 € · Decoración</p>
+        <p class="nota">Detalle no disponible en el prototipo</p>
+      </article>
+
+      <article class="tarjeta">
+        <h3>Figura decorativa</h3>
+        <img src="img/figura.svg" alt="Figura decorativa de color morado">
+        <p>Figura modelada a mano, pieza única.</p>
+        <p class="precio">50,00 € · Decoración</p>
+        <p class="nota">Detalle no disponible en el prototipo</p>
+      </article>
+    </div>
+
+    <nav class="paginacion" aria-label="Paginación">
+      <button type="button" class="boton-secundario">Anterior</button>
+      <button type="button" aria-current="page" aria-label="Página 1, página actual">1</button>
+      <button type="button" class="boton-secundario" aria-label="Página 2">2</button>
+      <button type="button" class="boton-secundario" aria-label="Página 3">3</button>
+      <button type="button" class="boton-secundario">Siguiente</button>
+    </nav>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ArteLocal - Prototipo con datos ficticios</p>
+  </footer>
+
+</body>
+</html>
